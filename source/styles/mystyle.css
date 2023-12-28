@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Michroma&display=swap');
+
+body {
+    font-family: Michroma, serif;
+    background: linear-gradient(0deg, #0ac2f0 0%, #242323 90%);
+}
+
+.nav-link {
+    color: white;
+    font-size: 1.2rem;   
+}
+
+.nav-link:hover {
+    color: rgb(47, 179, 205);
+    text-shadow:
+    0 0 1px #fff,
+    0 0 2px #fff,
+    0 0 5px #fff,
+    0 0 7px rgb(47, 179, 205),
+    0 0 12px rgb(47, 179, 205),
+    0 0 15px rgb(47, 179, 205),
+    0 0 25px rgb(47, 179, 205),
+    0 0 50px rgb(47, 179, 205);
+}
+
+.navbar-nav .nav-link.active {
+    color: rgb(47, 179, 205);
+    text-shadow:
+    0 0 1px #fff,
+    0 0 2px #fff,
+    0 0 5px #fff,
+    0 0 7px rgb(47, 179, 205),
+    0 0 12px rgb(47, 179, 205),
+    0 0 15px rgb(47, 179, 205),
+    0 0 25px rgb(47, 179, 205),
+    0 0 50px rgb(47, 179, 205);
+}
+
+.navbar-toggler {
+    background-color: rgb(108, 214, 236);
+}
+
+img[alt="logo"] {
+    width: 50px;
+}
+
+.sidebar {
+    color: white;
+    background: linear-gradient(230deg, #0ac2f0 0%, #242323 90%);
+}
+
+.card {
+    background: linear-gradient(130deg, #0ac2f0 50%, #242323 100%);
+}
+
+.card a {
+    text-decoration: none;
+    color: black;
+}
+
+.slide-text,
+.footer-text {
+    color: white;
+    margin: auto auto;
+}
+
+footer {
+    background: linear-gradient(330deg, #0ac2f0 10%, #242323 95%);
+}
+
+.media-links img {
+    width: 40px;
+    margin-inline: 1em;
+}
+
+.media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-anim {
+    animation: call 2s ease 1s infinite normal none;
+}
+
+.btn-outline-primary:hover {
+    background: linear-gradient(330deg, #f00a0a 10%, #242323 95%);
+    border-color: black;
+}
+
+.btn-outline-primary {
+    color: black;
+    border-color: black;
+}
+
+@keyframes call {
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 50% 50%;
+	}
+
+	10% {
+		transform: rotate(8deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-10deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(10deg);
+	}
+
+	80% {
+		transform: rotate(-8deg);
+	}
+
+	90% {
+		transform: rotate(8deg);
+	}
+}
